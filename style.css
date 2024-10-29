@@ -1,0 +1,43 @@
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.menu-item {
+    transition: transform 0.3s;
+    height: 100%;
+}
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+.navbar {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+.menu-item .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+.menu-item .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.menu-item .btn {
+    margin-top: auto;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+    .menu-item .card-img-top {
+        height: 200px;
+    }
+}
